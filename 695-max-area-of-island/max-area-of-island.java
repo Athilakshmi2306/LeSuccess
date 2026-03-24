@@ -23,6 +23,4 @@ class Solution {
          area=area+dfs(grid,row,col-1);
          return area;
        }
-
-    
 }
