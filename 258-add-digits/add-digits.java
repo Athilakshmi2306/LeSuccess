@@ -1,14 +1,7 @@
 class Solution {
-    public int addDigits(int num) {
-  while (num >= 10) {   
-            int add = 0;
-    while (num > 0) {
-                int digit = num % 10;
-                add += digit;
-                num /= 10;
-      }  
-      num = add;
-        }
-        return num;
+    public int addDigits(int n) {
+   if(n==0) return 0;
+   if(n%9==0) return 9;
+   return n%9;
     }
 }
